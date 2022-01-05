@@ -1,25 +1,98 @@
-body{
-    margin: 0;
-    /* background-image: url("./img/ocean.jpg"); */
-    width: 100vw;
+* {
+  border: 1px solid #000;
 }
 
-nav{
-    background-color: wheat;
-    position: fixed;
-    top: 0;
-    left: 0;
+body {
+  margin: 0;
+  /* background-image: url("./img/ocean.jpg") */
+  width: 100vw;
 }
 
-.flex-con{
-    background-color: salmon;
-    display: flex;
-    padding: 50px;
-    justify-content: center;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: wheat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.flex-con > div {
-    background-color: silver;
-    padding: 20px;
-    align-items: center;
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: salmon;
+  padding: 50px;
+}
+
+.flex-con .proPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: silver;
+  padding: 5%;
+  align-items: center;
+  width: 25vw;
+}
+
+.flex-con .proPic img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flex-con .intro {
+  background: pink;
+  padding: 20px;
+  width: 75vw;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
