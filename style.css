@@ -1,6 +1,7 @@
 body{
     margin: 0;
     /* background-image: url("./img/ocean.jpg"); */
+    width: 100vw;
 }
 
 nav{
@@ -8,5 +9,17 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+}
+
+.flex-con{
+    background-color: salmon;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.flex-con > div {
+    background-color: silver;
+    padding: 20px;
+    align-items: center;
 }
