@@ -13,27 +13,32 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <!-- navbar start -->
-    <nav>
+  <body class="container-fluid">
+    <!-- navbar -->
+    <nav class="row">
       <div class="logo">
         <p>LOGO</p>
       </div>
-      <ul>
-        <li><a href="">HOME</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">GALLERY</a></li>
-        <li><a href="">FEATURES</a></li>
-        <li><a href="">CONTACT</a></li>
-      </ul>
+      <div>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="">FEATURES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
       <div class="icon">
         <p>LOGO</p>
       </div>
     </nav>
     <!-- navbar end -->
 
-    <!-- header start -->
-    <div class="d-flex align-items-center justify-content-center" style="height:100vh">
+    <!-- header -->
+    <div
+      class="row d-flex align-items-center justify-content-center"
+      style="height: 100vh"
+    >
       <div class="p-5 align-items-center">
         <div class="d-flex justify-content-center">
           <h1 class="display-2">Ment to be helpful.</h1>
@@ -43,50 +48,56 @@
         </div> -->
       </div>
     </div>
-    </div>    
     <!-- header end -->
 
-    <!-- About start -->
-    <div class="flex-con" style="min-height:100vh">
-      <div class="proPic">
+    <!-- About -->
+    <div class="flex-con" style="min-height: 100vh">
+      <!-- pro pic & info -->
+      <div class="pro">
         <img src="https://fakeimg.pl/300x300/ffeeee/" alt="proPic" />
         <ul>
           <li><h1>Yu-Fen Huang</h1></li>
           <li>Taipei City, Taiwan</li>
           <li>yufenhuangtaiwan@gmail.com</li>
-          <li><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Discord</a></li>
+          <li>
+            <a href="#">GitHub</a><a href="#">LinkedIn</a
+            ><a href="#">Discord</a>
+          </li>
         </ul>
-        
       </div>
-      <div class="intro">
-        <div class="intro-top">
-        <h2>intro</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni
-          excepturi qui libero quibusdam possimus nemo repellat nobis officia
-          veniam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          dolores at, quam distinctio consequatur a itaque vero dolorum sint
-          pariatur accusantium laboriosam in molestiae odio eius facere quae
-          unde sequi.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+      <!-- pro pic & info end -->
 
-        <!-- Features start -->
+      <div class="intro">
+        <!-- Intop-top -->
+        <div class="intro-top">
+          <h2>intro</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            magni excepturi qui libero quibusdam possimus nemo repellat nobis
+            officia veniam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis dolores at, quam distinctio consequatur a itaque vero
+            dolorum sint pariatur accusantium laboriosam in molestiae odio eius
+            facere quae unde sequi.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <!-- Intop-top end -->
+
+        <!-- Features -->
         <div class="intro-buttom">
-        <h2 class="fe-title">Features</h2>
-        <span class="features p-3">
-          <ul>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-          </ul>
-        </dspan>
+          <h2 class="fe-title">Features</h2>
+          <span class="features p-3">
+            <ul>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+            </ul>
+          </span>
         </div>
         <!-- Features end -->
       </div>
@@ -95,67 +106,65 @@
 
     <!-- Gallery start -->
     <div class="gallery p-3">
-      <div class="card bg-primary m-3">
-        <img
-        class="card-img-top"
-        src="https://fakeimg.pl/320x180/ffeeee/"
-        alt="Card image"
-        style="width: 100%"
-        />
-
-        <div class="card-body text-center">
-          <h3>Work1</h3>
-          <p class="card-text">Some text inside the first card</p>
-          <ul>
-            <li>li123</li>
-            <li>li123</li>
-            <li>li123</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card bg-warning m-3">
-        <img
-        class="card-img-top"
-        src="https://fakeimg.pl/320x180/ffeeee/"
-          alt="Card image"
-          style="width: 100%"
-        />
-        <div class="card-body text-center">
-          <h3>Work1</h3>
-          <p class="card-text">Some text inside the first card</p>
-          <ul>
-            <li>li123</li>
-            <li>li123</li>
-            <li>li123</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card bg-warning m-3">
+      <div class="card bg-primary col-12 col-md-4">
         <img
           class="card-img-top"
           src="https://fakeimg.pl/320x180/ffeeee/"
           alt="Card image"
           style="width: 100%"
-          />
-          <div class="card-body text-center">
-            <h3>Work1</h3>
-            <p class="card-text">Some text inside the first card</p>
-            <ul>
-              <li>li123</li>
-              <li>li123</li>
-              <li>li123</li>
-            </ul>
-          </div>
+        />
+        <div class="card-body text-center">
+          <h3>Work1</h3>
+          <p class="card-text">Some text inside the first card</p>
+          <ul>
+            <li>li123</li>
+            <li>li123</li>
+            <li>li123</li>
+          </ul>
         </div>
       </div>
-      <!-- Gallery start -->
-  
 
+      <div class="card bg-warning m-3 col-12 col-md-4">
+        <img
+          class="card-img-top"
+          src="https://fakeimg.pl/320x180/ffeeee/"
+          alt="Card image"
+          style="width: 100%"
+        />
+        <div class="card-body text-center">
+          <h3>Work1</h3>
+          <p class="card-text">Some text inside the first card</p>
+          <ul>
+            <li>li123</li>
+            <li>li123</li>
+            <li>li123</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card bg-warning m-3 col-12 col-md-4">
+        <img
+          class="card-img-top"
+          src="https://fakeimg.pl/320x180/ffeeee/"
+          alt="Card image"
+          style="width: 100%"
+        />
+        <div class="card-body text-center">
+          <h3>Work1</h3>
+          <p class="card-text">Some text inside the first card</p>
+          <ul>
+            <li>li123</li>
+            <li>li123</li>
+            <li>li123</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery end -->
 
     <!-- Contact start -->
     <div class="contact">
       <h1>Contact</h1>
-
     </div>
     <!-- Contact end -->
 

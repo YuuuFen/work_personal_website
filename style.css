@@ -74,7 +74,7 @@ nav .icon {
   padding: 5% 10%;
 }
 
-.flex-con .proPic {
+.flex-con .pro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,16 +94,16 @@ nav .icon {
   width: 25vw;
 }
 
-.flex-con .proPic ul {
+.flex-con .pro ul {
   margin-top: 30px;
   display: inline-block;
 }
 
-.flex-con .proPic h1 {
+.flex-con .pro h1 {
   font-size: 24px;
 }
 
-.flex-con .proPic img {
+.flex-con .pro img {
   max-width: 100%;
   border-radius: 50%;
 }
