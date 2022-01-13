@@ -7,11 +7,32 @@ body, html {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+}
+
 #home {
   background-image: url("./img/ocean.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
+}
+
+#proPic {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#proPic:hover {
+  border: 8px solid rgba(255, 215, 0, 0.5);
+}
+
+#gallery .card-title {
+  font-size: 28px;
 }
 
 ul {
@@ -20,33 +41,39 @@ ul {
 }
 
 nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgba(250, 250, 250, 0.5);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+
+nav ul a {
+  color: #555;
+}
+
+nav .nav-logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery .card:hover {
+  -webkit-box-shadow: 3px 3px 5px rgba(255, 215, 0, 0.8);
+          box-shadow: 3px 3px 5px rgba(255, 215, 0, 0.8);
 }
 
 footer div {
@@ -59,7 +86,7 @@ footer div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8vh;
+  height: 10vh;
   color: #f0f0f0;
   background-color: rgba(20, 20, 20, 0.6);
   -webkit-backdrop-filter: blur(3px);

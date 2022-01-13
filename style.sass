@@ -5,50 +5,57 @@
 body, html
     margin: 0
 
+a
+    text-decoration: none
+
+p
+    font-size: 20px
+
 #home
     background-image: url("./img/ocean.jpg")
     background-repeat: no-repeat
     background-attachment: fixed
     width: 100vw
 
+#proPic
+    width: 100%
+    border-radius: 50%
+
+#proPic:hover
+    border: 8px solid rgba(255, 215, 0, 0.5)
+
+#gallery
+    .card-title
+        font-size: 28px
+
 ul
     padding: 0
     list-style: none
 
 nav
-    // display: flex !important
-    justify-content: space-between
-    background-color: rgba(250,250,250,0.5)
-    backdrop-filter: blur(3px)
-    position: fixed
-    top: 0
-    width: 100%
-    .logo
-        // display: flex
-        // justify-content: center
+    display: flex !important
+    justify-content: center
+    align-content: center
+    padding: 10px
     ul
-        display: flex
-        justify-content: space-between
-
-    .icon
-        display: flex
+        display: flex !important
+        align-content: center
+        margin: auto
+        a
+            color: #555
+    .nav-logo
         justify-content: center
 
-// .contact
-//     background-color: wheat
-//     h1
-//         margin: 0
-//     ul
-//         margin: 0
-//         padding: 0
-//         list-style: none
+.gallery
+    .card:hover
+        box-shadow: 3px 3px 5px rgba(255, 215, 0, 0.8)
 
 footer
     div
         display: flex
         justify-content: center
         align-items: center
-        height: 8vh
+        height: 10vh
         color: rgb(240,240,240)
         background-color: rgba(20,20,20,0.6)
         backdrop-filter: blur(3px)

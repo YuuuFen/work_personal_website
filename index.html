@@ -23,21 +23,20 @@
     <!-- navbar -->
     <div class="container-fluid">
       <nav class="row">
-        <div class="logo">
-          <p>LOGO</p>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#about">FEATURES</a></li>
+        <!-- <div class="nav-logo">
+          <a href="#home" style="color: #555;"><i class="fas fa-universal-access fa-3x"></i></a>
+        </div> -->
+        <div class="nav-list">
+          <ul style="font-size: 18px;">
+            <li><a href="#home">HOME</a><span>&nbsp;|&nbsp;</span></li>
+            <li><a href="#about">ABOUT</a><span>&nbsp;|&nbsp;</span></li>
             <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <!-- <li><a href="#contact">CONTACT</a></li> -->
           </ul>
         </div>
-        <div class="icon">
+        <!-- <div class="icon">
           <p>LOGO</p>
-        </div>
+        </div> -->
       </nav>
     </div>
     <!-- navbar end -->
@@ -50,41 +49,42 @@
     >
       <div class="p-5 align-items-center">
         <div class="d-flex justify-content-center">
-          <h1 class="display-2">Ment to be helpful.</h1>
+          <h1 class="display-2">Let's work together.</h1>
         </div>
       </div>
     </div>
     <!-- header end -->
 
     <!-- About -->
-    <div class="container" style="min-height: 100vh" id="about">
+    <div class="container about" style="min-height: 100vh" id="about">
       <!-- pro pic & info -->
-      <!-- <div class="row"> -->
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mt-5 pt-5">
+        <div class="col-8 col-md-4">
         <img
-          src="https://fakeimg.pl/300x300/ffeeee/"
+          src="./img/proPic2.jpeg"
           alt="proPic"
-          class="col-8 col-md-4 p-5"
+          id="proPic"
         />
+        </div>
         <div class="col-12 col-md-8 align-self-center">
           <ul>
             <li><h1>Yu-Fen Huang</h1></li>
-            <li>Taipei City, Taiwan</li>
-            <li>yufenhuangtaiwan@gmail.com</li>
+            <li style="height: 120%;"><p>Taipei City, Taiwan</p></li>
+            <li style="height: 120%;"><p>yufenhuangtaiwan@gmail.com</p></li>
             <li>
-              <a href="#">GitHub</a><a href="#">LinkedIn</a
-              ><a href="#">Discord</a>
+              <a href="https://github.com/YuuuFen"><i class="fab fa-github" style="font-size: 2em;"> &nbsp;</i></a>
+              <a href="https://www.linkedin.com/in/yu-fen-huang-886a6215a/"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a
+              >
             </li>
           </ul>
         </div>
-        <!-- </div> -->
       </div>
       <!-- pro pic & info end -->
 
       <div>
         <!-- Intop-top -->
         <div class="intro-top mt-3">
-          <h2>intro</h2>
+          <h2>About Me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             magni excepturi qui libero quibusdam possimus nemo repellat nobis
@@ -103,26 +103,26 @@
         <!-- Features -->
 
         <div class="intro-buttom mt-5">
-          <h2>features</h2>
+          <h2>Features</h2>
           <div class="align-items-center">
-            <span class="col-12 col-md-2" style="font-size: 5em"
+            <span class="col-12 col-md-2" style="font-size:5em;color:#0c73b8;"
               ><i class="fab fa-css3-alt"></i
             ></span>
-            <span class="col-12 col-md-2" style="font-size: 5em"
-              ><i class="fab fa-html5"></i
+            <span class="col-12 col-md-2" style="font-size:5em;color:#e45126;"><i class="fab fa-html5"></i
             ></span>
-            <span class="col-12 col-md-2" style="font-size: 5em"
+            <span class="col-12 col-md-2" style="font-size:5em;color:#F0DB4F" aria-hidden="true" 
               ><i class="fab fa-js-square"></i
             ></span>
-            <span class="col-12 col-md-2" style="font-size: 5em"
+            <span class="col-12 col-md-2" style="font-size:5em;color:#787cb4;"
               ><i class="fab fa-php"></i
             ></span>
-            <span class="col-12 col-md-2" style="font-size: 5em"
+            <span class="col-12 col-md-2" style="font-size:5em;color:#c69;"
               ><i class="fab fa-sass"></i
             ></span>
-            <span class="col-12 col-md-2" style="font-size: 5em"
+            <span class="col-12 col-md-2" style="font-size:5em;color:#602C50;"
               ><i class="fab fa-bootstrap"></i
             ></span>
+            <!-- <span><img src="./img/logo.gif" alt="" style="position: relative;bottom:20px"></span> -->
           </div>
         </div>
         <!-- Features end -->
@@ -131,8 +131,26 @@
     <!-- About end -->
 
     <!-- Gallery start -->
-    <div class="container" id="gallery">
-      <div class="row row-cols-1 row-cols-md-3 mb-5">
+    <div class="container gallery" style="min-height: 100vh" id="gallery">
+      <h2>Gallery</h2>
+      <div class="row row-cols-1 row-cols-md-3 mt-5">
+        <div class="col mb-1">
+          <div class="card text-center">
+            <img
+              src="./img/calander.PNG"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Calander</h5>
+              <!-- <p class="card-text">This is a longer card.</p> -->
+              <ul>
+                <li>HTML & CSS & PHP</li>
+                <li>RWD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="col mb-1">
           <div class="card text-center">
             <img
@@ -142,7 +160,6 @@
             />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card.</p>
               <ul>
                 <li>li123</li>
                 <li>li123</li>
@@ -160,7 +177,6 @@
             />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card.</p>
               <ul>
                 <li>li123</li>
                 <li>li123</li>
@@ -178,29 +194,6 @@
             />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card.</p>
-              <ul>
-                <li>li123</li>
-                <li>li123</li>
-                <li>li123</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="gallery">
-      <div class="row row-cols-1 row-cols-md-3 mb-5">
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="https://fakeimg.pl/320x180/ffeeee/"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card.</p>
               <ul>
                 <li>li123</li>
                 <li>li123</li>
@@ -218,7 +211,6 @@
             />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card.</p>
               <ul>
                 <li>li123</li>
                 <li>li123</li>
@@ -238,9 +230,9 @@
     <!-- Contact end -->
 
     <footer>
-      <div>
+      <div class="container-fluid">
         <span>Made by &nbsp;</span>
-        <a href="#">Yu-Fen Huang</a>
+        <a href="/login.html">Yu-Fen Huang</a>
         <span class="author" itemprop="copyrightHolder"
           >, with love in 2022 &nbsp;</span>
         <span class="with-love">
