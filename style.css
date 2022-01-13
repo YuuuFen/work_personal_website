@@ -18,9 +18,6 @@ ul {
 }
 
 nav {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -30,15 +27,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-nav .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 nav ul {
@@ -57,115 +45,6 @@ nav .icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.bh {
-  margin: 150px 0 150px 0;
-}
-
-.flex-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #454647;
-  padding: 5% 10%;
-}
-
-.flex-con .pro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  background-color: silver;
-  padding: 3%;
-  width: 25vw;
-}
-
-.flex-con .pro ul {
-  margin-top: 30px;
-  display: inline-block;
-}
-
-.flex-con .pro h1 {
-  font-size: 24px;
-}
-
-.flex-con .pro img {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.flex-con .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.flex-con .intro .intro-top {
-  background: #454647;
-  color: #E7E7E7;
-  padding: 2%;
-}
-
-.flex-con .intro .intro-buttom {
-  background: #100057;
-  color: #E7E7E7;
-  padding: 2%;
-}
-
-.flex-con .intro .intro-buttom .fe-title {
-  margin-top: 50px;
-}
-
-.flex-con .intro .intro-buttom .features {
-  background: #b1b2b3;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flex-con .intro .intro-buttom ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: pink;
-  margin: 0;
 }
 
 .contact {
