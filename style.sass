@@ -1,15 +1,19 @@
 *
-    // border: 1px solid #000
+    border: 1px solid #000
     box-sizing: border-box
 
 body, html
     margin: 0
+    scroll-behavior: smooth
 
 a
     text-decoration: none
 
 p
     font-size: 20px
+
+h2
+    padding-top: 6vh
 
 #home
     background-image: url("./img/ocean.jpg")
@@ -34,13 +38,14 @@ ul
 
 nav
     display: flex !important
+    z-index: 1
     position: fixed
     width: 100%
     background-color: rgba(250,250,250,0.5)
     backdrop-filter: blur(3px)
     justify-content: center
     align-content: center
-    padding: 15px
+    height: 6vh
     ul
         display: flex !important
         align-content: center
@@ -59,7 +64,7 @@ footer
         display: flex
         justify-content: center
         align-items: center
-        height: 10vh
+        height: 6vh
         color: rgb(240,240,240)
         background-color: rgba(20,20,20,0.6)
         backdrop-filter: blur(3px)
