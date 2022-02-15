@@ -13,7 +13,11 @@ a
     text-decoration: none
 
 p
-    font-size: 20px
+    font-size: 16px
+
+ul
+    padding: 0
+    list-style: none
 
 #home
     background-image: url("./img/ocean.jpg")
@@ -39,7 +43,6 @@ p
     background-color: rgba(250,250,250,0.5)
     backdrop-filter: blur(3px)
     height: auto
-    ul
     .nav-center
         width: 100%
         .nav-logo
@@ -122,8 +125,7 @@ p
         flex: 1
         padding: 0 10% 0 5%
         .div_lang
-            display: flex
-            justify-content: space-evenly
+            text-align: center
             label:hover
                 text-decoration: underline
                 text-decoration-color: #6667AB
@@ -136,30 +138,44 @@ p
 
 // About
 #about
-    padding-top: 170px
+    padding-top: 160px
     min-height: 100vh
     background-color: pink
+    div
+        padding: 0 5%
     #pro-pic-info
         display: flex
+        align-items: center
         #info
-            flex: 2
+            flex: 3
         #div-pro-pic
             flex: 1
             display: flex
             align-items: center
             #pro-pic
-                width: 100%
+                margin: 2%
+                padding: 5%
+                width: 90%
                 border-radius: 50%
             #pro-pic:hover
-                border: 8px solid   #6667AB
+                border: 3px solid #6667AB
 
 #gallery
+    padding-top: 160px
+    background-color: #bbcc99
     min-height: 100vh
-    // .card:hover
-        
-ul
-    padding: 0
-    list-style: none
+    div
+        padding: 0 5%
+
+#contact
+    padding-top: 160px
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    div
+        padding: 0 5%
+    #contact_form
+        height: 400px
 
 footer
     div
