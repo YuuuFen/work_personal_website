@@ -4,7 +4,7 @@ body, h2 {
 }
 
 body {
-  background-color: #6667AB;
+  background-color: #ECE2D6;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
@@ -55,7 +55,7 @@ body {
 #home #login #form-holder button {
   width: 100%;
   background-color: #888;
-  color: #EEE;
+  color: #f8f8f8;
 }
 
 #home #login #form-holder button:hover {
