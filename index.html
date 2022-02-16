@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
+    <title>個人網站</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -20,59 +14,93 @@
     />
   </head>
   <body>
-    <!-- navbar -->
-    <div class="container-fluid">
-      <nav class="row">
-        <!-- <div class="nav-logo">
-          <a href="#home" style="color: #555;"><i class="fas fa-universal-access fa-3x"></i></a>
-        </div> -->
-        <div class="nav-list">
-          <ul style="font-size: 18px;">
-            <li><a href="#home">HOME</a><span>&nbsp;|&nbsp;</span></li>
-            <li><a href="#about">ABOUT</a><span>&nbsp;|&nbsp;</span></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <!-- <li><a href="#contact">CONTACT</a></li> -->
-          </ul>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-logo">
+            <a href="#home" style="color: #555;"><img src="./img/fake_signature_2_small.png" alt=""></a>
+          </div>
+          <div class="nav-menu">
+            <div class="w-menu">
+              <ul>
+                <li><a href="#home">HOME&nbsp;</li>
+                <li><a href="#about">ABOUT&nbsp;</li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- <div class="icon">
-          <p>LOGO</p>
-        </div> -->
       </nav>
     </div>
-    <!-- navbar end -->
+    <!-- Navbar end -->
 
-    <!-- header -->
+    <!-- Greeting -->
     <div
-      class="row d-flex align-items-center justify-content-center"
-      style="height: 100vh"
       id="home"
     >
-      <div class="p-5 align-items-center">
-        <div class="d-flex justify-content-center">
-          <h1 class="display-2">Let's work together.</h1>
+      <div id="greeting-line">
+        <h1>Let's work together.</h1>
+      </div>
+    </div>
+    <!-- Greeting end -->
+
+    <!-- Options -->
+    <div class="opt" id="opt">
+      <div class="opt_mode">
+        <div>
+          <p>... and inspire for better solutions</p>
+        </div>
+        <div class="div_mode" style="display: flex; justify-content: center;">
+          <label class="mode">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="opt_lang">
+        <div>
+        <p>... by courageous conversations</p>
+        </div>
+        <div class="div_lang">
+          <div>
+            <label class="options" checked>English
+              <input type="radio" checked="checked" name="radio">
+            </label>
+          </div>
+          <div>
+            <label class="options">Chinese
+              <input type="radio" name="radio">
+            </label>
+          </div>
+          <div>
+            <label class="options">Japanese
+              <input type="radio" name="radio">
+            </label>
+          </div>
         </div>
       </div>
     </div>
-    <!-- header end -->
+    <!-- Option end -->
 
     <!-- About -->
-    <div class="container about" style="min-height: 100vh" id="about">
+    <div id="about">
       <!-- pro pic & info -->
-      <div class="row justify-content-center mt-5 pt-5">
-        <div class="col-8 col-md-4">
+      <div id="pro-pic-info">
+        <div id="div-pro-pic">
         <img
           src="./img/proPic2.jpeg"
-          alt="proPic"
-          id="proPic"
+          alt=""
+          id="pro-pic"
         />
         </div>
-        <div class="col-12 col-md-8 align-self-center">
+        <div id="info">
           <ul>
-            <li><h1>Yu-Fen Huang</h1></li>
-            <li style="height: 120%;"><p>Taipei City, Taiwan</p></li>
-            <li style="height: 120%;"><p>yufenhuangtaiwan@gmail.com</p></li>
+            <li>Yu-Fen Huang</li>
+            <li>Taipei City, Taiwan</li>
             <li>
-              <a href="https://github.com/YuuuFen"><i class="fab fa-github" style="font-size: 2em;"> &nbsp;</i></a>
+              <a href="https://github.com/YuuuFen"><i class="fab fa-github" style="font-size: 2em;"></i></a>
               <a href="https://www.linkedin.com/in/yu-fen-huang-886a6215a/"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a
               >
             </li>
@@ -80,10 +108,9 @@
         </div>
       </div>
       <!-- pro pic & info end -->
-
+      <!-- intro -->
       <div>
-        <!-- Intop-top -->
-        <div class="intro-top mt-3">
+        <div class="">
           <h2>About Me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
@@ -98,135 +125,97 @@
           </p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <!-- Intop-top end -->
-
-        <!-- Features -->
-
-        <div class="intro-buttom mt-5">
+      </div>
+      <!-- intro end -->
+      <!-- Features -->
+      <div>
+        <div class="">
           <h2>Features</h2>
-          <div class="align-items-center">
-            <span class="col-12 col-md-2" style="font-size:5em;color:#0c73b8;"
-              ><i class="fab fa-css3-alt"></i
-            ></span>
-            <span class="col-12 col-md-2" style="font-size:5em;color:#e45126;"><i class="fab fa-html5"></i
-            ></span>
-            <span class="col-12 col-md-2" style="font-size:5em;color:#F0DB4F" aria-hidden="true" 
-              ><i class="fab fa-js-square"></i
-            ></span>
-            <span class="col-12 col-md-2" style="font-size:5em;color:#787cb4;"
-              ><i class="fab fa-php"></i
-            ></span>
-            <span class="col-12 col-md-2" style="font-size:5em;color:#c69;"
-              ><i class="fab fa-sass"></i
-            ></span>
-            <span class="col-12 col-md-2" style="font-size:5em;color:#602C50;"
-              ><i class="fab fa-bootstrap"></i
-            ></span>
-            <!-- <span><img src="./img/logo.gif" alt="" style="position: relative;bottom:20px"></span> -->
+          <div class="">
+          <span class="" style="font-size:3em;color:#0c73b8;"
+            ><i class="fab fa-css3-alt"></i
+          ></span>
+          <span class="" style="font-size:3em;color:#e45126;"><i class="fab fa-html5"></i
+          ></span>
+          <span class="" style="font-size:3em;color:#F0DB4F" aria-hidden="true" 
+            ><i class="fab fa-js-square"></i
+          ></span>
+          <span class="" style="font-size:3em;color:#787cb4;"
+            ><i class="fab fa-php"></i
+          ></span>
+          <span class="" style="font-size:3em;color:#c69;"
+            ><i class="fab fa-sass"></i
+          ></span>
+          <span class="" style="font-size:3em;color:#602C50;"
+            ><i class="fab fa-bootstrap"></i
+          ></span>
           </div>
         </div>
-        <!-- Features end -->
       </div>
+      <!-- Features end -->
     </div>
-    <!-- About end -->
+  <!-- About end -->
+
 
     <!-- Gallery start -->
-    <div class="container gallery" style="min-height: 100vh" id="gallery">
-      <h2>Gallery</h2>
-      <div class="row row-cols-1 row-cols-md-3 mt-5">
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="./img/calander.PNG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Calander</h5>
-              <!-- <p class="card-text">This is a longer card.</p> -->
-              <ul>
-                <li>HTML & CSS & PHP</li>
-                <li>RWD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="https://fakeimg.pl/320x180/ffeeee/"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul>
-                <li>li123</li>
-                <li>li123</li>
-                <li>li123</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="https://fakeimg.pl/320x180/ffeeee/"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul>
-                <li>li123</li>
-                <li>li123</li>
-                <li>li123</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="https://fakeimg.pl/320x180/ffeeee/"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul>
-                <li>li123</li>
-                <li>li123</li>
-                <li>li123</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-1">
-          <div class="card text-center">
-            <img
-              src="https://fakeimg.pl/320x180/ffeeee/"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul>
-                <li>li123</li>
-                <li>li123</li>
-                <li>li123</li>
-              </ul>
-            </div>
-          </div>
+    <div id="gallery">
+      <div><h2>Gallery</h2></div>
+      <div class="card-body">
+        <div class="card-img"><img src="https://fakeimg.pl/320x180/ffeecc/" alt=""></div>
+        <div>
+          <ul>
+            <li><h3 class="card-title">Calender</h3></li>
+            <li>one sentence</li>
+          </ul>
         </div>
       </div>
+      <div class="card-body">
+        <div class="card-img"><img src="https://fakeimg.pl/320x180/ffeecc/" alt=""></div>
+        <div>
+          <ul>
+            <li><h3 class="card-title">Calender</h3></li>
+            <li>one sentence</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-img"><img src="https://fakeimg.pl/320x180/ffeecc/" alt=""></div>
+        <div>
+          <ul>
+            <li><h3 class="card-title">Calender</h3></li>
+            <li>one sentence</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-img"><img src="https://fakeimg.pl/320x180/ffeecc/" alt=""></div>
+        <div>
+          <ul>
+            <li><h3 class="card-title">Calender</h3></li>
+            <li>one sentence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     </div>
     <!-- Gallery end -->
 
     <!-- Contact start -->
-    <!-- <div class="contact" id="contact">
-      <h1>Contact</h1>
-    </div> -->
+    <div id="contact">
+      <div><h1>Contact</h1></div>
+      <div id="contact_form">
+        <form action="">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </form>
+      </div>
+    </div>
     <!-- Contact end -->
 
     <footer>
@@ -241,20 +230,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-      crossorigin="anonymous"
-    ></script>
+    <!-- JS -->
+    <!-- JS end -->
   </body>
 </html>

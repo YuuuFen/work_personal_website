@@ -1,0 +1,68 @@
+body, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #6667AB;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95vh;
+}
+
+#home #login {
+  padding: 3% 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(250, 250, 250, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: auto;
+  border-radius: 10px;
+}
+
+#home #login h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#home #login #form-holder input, #home #login #form-holder button {
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+}
+
+#home #login #form-holder button {
+  width: 100%;
+  background-color: #888;
+  color: #EEE;
+}
+
+#home #login #form-holder button:hover {
+  background-color: #555;
+}
+
+#home #login #form-holder button:focus {
+  background-color: #222;
+}
+/*# sourceMappingURL=style_login.css.map */
