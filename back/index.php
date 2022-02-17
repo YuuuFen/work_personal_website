@@ -1,3 +1,7 @@
+<?php
+include_once "../base.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +14,9 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Dashboard</title>
     <style>
-        * {
+        /* * {
             border: 1px silver solid;
-        }
+        } */
     </style>
 </head>
 
@@ -34,7 +38,7 @@
         <!-- Page Content -->
         <div class="flex-grow-1">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 px-4">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-left">
                     <a href="./index.php" style="text-decoration: none"><i class="fas fa-align-left primary-text fs-4 me-3 "></i>
                         <span class="fs-2 m-0">Dashboard</span>
                     </a>
