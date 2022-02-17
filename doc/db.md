@@ -1,6 +1,6 @@
 # 資料庫規劃
 
-- DB name: Portfolio
+- DB name: s1100413
 
 - scheme
   |欄位名|資料型態|主鍵|預設值|自動遞增|備註|
