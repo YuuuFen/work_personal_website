@@ -21,68 +21,39 @@
         <!-- Sidebar -->
         <div class="flex-grow-2 bg-white">
             <div class="list-group list-group-flush my-3">
-                <a href="./dashboard.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-eye me-2"></i>Scheme</a>
-                <a href="./about.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-address-card me-2"></i>About</a>
-                <a href="./work-exp.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-building me-2"></i>WorkExp.</a>
-                <a href="./gallery.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-project-diagram me-2"></i>Gallery</a>
-                <a href="./message.php" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-comment-dots me-2"></i>Message</a>
+                <a href="?do=scheme" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-eye me-2"></i>Scheme</a>
+                <a href="?do=about" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-address-card me-2"></i>About</a>
+                <a href="?do=work_exp" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="far fa-building me-2"></i>WorkExp.</a>
+                <a href="?do=gallery" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-project-diagram me-2"></i>Gallery</a>
+                <a href="?do=message" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="fas fa-comment-dots me-2"></i>Message</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
-        <!-- /#sidebar-wrapper -->
+        <!-- Sidebar -->
 
         <!-- Page Content -->
-        <div class="flex-grow-1" style="background-color: bisque;">
+        <div class="flex-grow-1">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 px-4">
                 <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3"></i>
-                    <h2 class="fs-2 m-0">Dashboard</h2>
+                    <a href="./index.php" style="text-decoration: none"><i class="fas fa-align-left primary-text fs-4 me-3 "></i>
+                        <span class="fs-2 m-0">Dashboard</span>
+                    </a>
                 </div>
-
-                <!-- <div class="fw-bold" href="#">
-                    <i class="fas fa-user me-2"></i>John Doe
-                </div> -->
             </nav>
 
             <div class="container-fluid px-4 overflow-auto">
-                <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">720</h3>
-                                <p class="fs-5">Products</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">4920</h3>
-                                <p class="fs-5">Sales</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">3899</h3>
-                                <p class="fs-5">Delivery</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">%25</h3>
-                                <p class="fs-5">Increase</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $do = $_GET['do'] ?? 'title';
+                $file =  $do . ".php";
+                if (file_exists($file)) {
+                    include $file;
+                } else {
+                    include "title.php";
+                }
+                ?>
             </div>
+
+
         </div>
     </div>
     <!-- /#page-content-wrapper -->
