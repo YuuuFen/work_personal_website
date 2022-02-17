@@ -287,17 +287,16 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#contact div {
+#contact h2, #contact form, #contact #contact_form {
   padding: 0 5%;
 }
 
-#contact #contact_form {
-  height: 400px;
-}
-
-footer div {
+#contact #footer-con #copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,6 +306,7 @@ footer div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
   height: 6vh;
   color: #f0f0f0;
   background-color: rgba(20, 20, 20, 0.6);
@@ -314,11 +314,11 @@ footer div {
           backdrop-filter: blur(3px);
 }
 
-footer a {
+#contact #footer-con a {
   color: #FFD700;
 }
 
-footer i {
+#contact #footer-con i {
   color: #e76565;
 }
 /*# sourceMappingURL=style.css.map */
