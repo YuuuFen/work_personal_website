@@ -1,9 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 *
     // border: 1px solid rgba(55,55,55,0.5)
     box-sizing: border-box
 
 html
     scroll-behavior: smooth
+    font-family: 'Montserrat'
 
 body
     margin: 0
@@ -12,12 +15,16 @@ body
 a
     text-decoration: none
 
-p
-    font-size: 16px
+a,p,label,li
+    font-size: 1.2rem
 
 ul
     padding: 0
     list-style: none
+
+h1,h2,h3,h4,h5
+    margin: 15px 0
+    text-transform: uppercase
 
 #home
     background-image: url("../img/ocean.jpg")
@@ -32,6 +39,7 @@ ul
         h1
             text-align: center
             overflow: hidden
+            font-size: 2.5rem
 
 .navbar
     display: flex
@@ -71,13 +79,15 @@ ul
 
 // Toggle Switch
 .opt
-    background-color: skyblue
+    // background-color: skyblue
     display: flex
     align-items: center
     flex-wrap: wrap
     justify-content: space-around
     width: 100vw
     height: 100vh
+    p
+        text-align: center
     .opt_mode
         flex: 1
         padding: 0 5% 0 10%
@@ -111,9 +121,11 @@ ul
             -webkit-transition: .4s
             transition: .4s
         input:checked + .slider
-            background-color: #6667AB
+            // background-color: #6667AB
+            background-color: #555
         input:focus + .slider
-            box-shadow: 0 0 1px #6667AB
+            // background-color: #6667AB
+            box-shadow: 0 0 1px #555
         input:checked + .slider:before
             -webkit-transform: translateX(26px)
             -ms-transform: translateX(26px)
@@ -125,7 +137,7 @@ ul
     .opt_lang
         flex: 1
         padding: 0 10% 0 5%
-        .div_lang
+        p, .div_lang
             text-align: center
             label:hover
                 text-decoration: underline
@@ -139,53 +151,104 @@ ul
 
 // About
 #about
-    padding-top: 160px
+    // background-color: pink
+    padding-top: 10vh
     min-height: 100vh
-    background-color: pink
-    div
-        padding: 0 5%
+    font-size: 1.2rem
+    line-height: 1.8
+    #about_me, #features
+        padding: 1% 10%
+        margin-top: 1%
     #pro-pic-info
+        padding: 1% 5%
         display: flex
         align-items: center
-        #info
-            flex: 3
         #div-pro-pic
-            flex: 1
+            padding: 0 5%
             display: flex
+            justify-content: center
             align-items: center
             #pro-pic
                 margin: 2%
                 padding: 5%
-                width: 90%
+                max-width: 200px
                 border-radius: 50%
             #pro-pic:hover
                 border: 3px solid #6667AB
 
-#gallery
-    padding-top: 160px
-    background-color: #bbcc99
-    min-height: 100vh
-    div
-        padding: 0 5%
+#about
+    #features
+        #skill_set
+            .skill
+                display: inline-block
+                width: 49%
+            .skill::before
+                content: '• '
 
-#contact
-    padding-top: 160px
+#gallery
+    // background-color: #bbcc99
+    padding: 10vh 10% 0 10%
+    min-height: 100vh
+    font-size: 1.2rem
+    .card-body
+        padding: 2% 0
+        margin: 2% 0
+
+#contact_footer
+    padding-top: 10vh
     min-height: 100vh
     display: flex
     flex-direction: column
+    align-items: center
     justify-content: space-between
-    h2,form,#contact_form
-        padding: 0 5%
-    #footer-con
-        #copyright
-            display: flex
-            justify-content: center
-            align-items: center
-            width: 100vw
-            height: 6vh
-            color: rgb(240,240,240)
-            background-color: rgba(20,20,20,0.6)
-            backdrop-filter: blur(3px)
+    h1
+        text-align: center
+    #contact
+        display: flex
+        flex-flow: column
+        border: 2px solid black
+        margin: 0 8%
+        min-height: 40vh
+        width: 40vw
+    input[type='text'], input[type='email'], select, textarea
+        width: 80%
+        font-family: 'Montserrat'
+        font-size: 1.2rem
+        background: none
+        border: none
+        border-bottom: solid 2px #888
+        margin: 10px
+        padding: 5px
+    textarea
+        overflow: auto
+    input[type='submit']
+        font-family: 'Montserrat'
+        margin-top: 20px
+        max-width: 60%
+        background-color: #888
+        color: #f8f8f8
+        font-size: 1.2rem
+        margin: 10px
+        padding: 5px
+    input[type='submit']:hover
+        background-color: #555
+    input[type='submit']:focus
+        background-color: #222
+
+#footer-con
+    display: flex
+    align-items: end
+    a
+        font-size: 1rem
+    #copyright
+        width: 100vw
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 6vh
+        color: rgb(240,240,240)
+        background-color: rgba(20,20,20,0.6)
+        backdrop-filter: blur(3px)
         a
             color: #FFD700
         i

@@ -71,12 +71,12 @@
           </div>
           <div>
             <label class="options">Chinese
-              <input type="radio" name="radio">
+              <input type="radio" name="radio" disabled>
             </label>
           </div>
           <div>
             <label class="options">Japanese
-              <input type="radio" name="radio">
+              <input type="radio" name="radio" disabled>
             </label>
           </div>
         </div>
@@ -109,52 +109,30 @@
       </div>
       <!-- pro pic & info end -->
       <!-- intro -->
-      <div>
-        <div class="">
+      <div id="about_me">
+        <div>
           <h2>About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            magni excepturi qui libero quibusdam possimus nemo repellat nobis
-            officia veniam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perspiciatis dolores at, quam distinctio consequatur a itaque vero
-            dolorum sint pariatur accusantium laboriosam in molestiae odio eius
-            facere quae unde sequi.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam at nemo voluptas neque quis soluta esse incidunt, dolore voluptate minus? Quibusdam fuga accusantium, accusamus eveniet, porro perspiciatis nostrum enim adipisci voluptatum molestiae magni sint aut cumque non aliquid, voluptates dolore! Non corrupti laboriosam modi labore ad dolorum laudantium dignissimos.
         </div>
       </div>
       <!-- intro end -->
       <!-- Features -->
       <div>
-        <div class="">
+        <div id="features">
           <h2>Features</h2>
-          <div class="">
-          <span class="" style="font-size:3em;color:#0c73b8;"
-            ><i class="fab fa-css3-alt"></i
-          ></span>
-          <span class="" style="font-size:3em;color:#e45126;"><i class="fab fa-html5"></i
-          ></span>
-          <span class="" style="font-size:3em;color:#F0DB4F" aria-hidden="true" 
-            ><i class="fab fa-js-square"></i
-          ></span>
-          <span class="" style="font-size:3em;color:#787cb4;"
-            ><i class="fab fa-php"></i
-          ></span>
-          <span class="" style="font-size:3em;color:#c69;"
-            ><i class="fab fa-sass"></i
-          ></span>
-          <span class="" style="font-size:3em;color:#602C50;"
-            ><i class="fab fa-bootstrap"></i
-          ></span>
+          <div id="skill_set">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">CSS</span>
+            <span class="skill">CSS</span>
           </div>
         </div>
       </div>
       <!-- Features end -->
     </div>
-  <!-- About end -->
+    <!-- About end -->
 
 
     <!-- Gallery start -->
@@ -202,18 +180,11 @@
     <!-- Gallery end -->
 
     <!-- Contact start -->
-    <div id="contact">
-      <div><h2>Contact</h2></div>
-      <div id="contact_form">
-        <h1>&bull; Keep in Touch &bull;</h1>
-        <div class="underline">
-        </div>
-        <div class="icon_wrapper">
-          <svg class="icon" viewBox="0 0 145.192 145.192">
-            <path d=""></path>
-            <path d=""></path>
-          </svg>
-        </div>
+    <div id="contact_footer">
+      <div></div>
+      <div id="contact">
+        <div><h1>&bull; Keep in Touch &bull;</h1></div>
+        <div class="underline"></div>
         <form action="#" method="post" id="contact_form">
           <div class="name">
             <label for="name"></label>
@@ -223,13 +194,13 @@
             <label for="email"></label>
             <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
           </div>
-          <div class="telephone">
+          <div class="company">
             <label for="name"></label>
-            <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+            <input type="text" placeholder="My company is" name="company" id="company_input">
           </div>
           <div class="subject">
             <label for="subject"></label>
-            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" name="subject" id="subject_input" placeholder="Subject" required>
           </div>
           <div class="message">
             <label for="message"></label>
@@ -238,13 +209,14 @@
           <div class="submit">
             <input type="submit" value="Send Message" id="form_button" />
           </div>
-        </form><!-- // End form -->
+        </form>
       </div>
+      <!-- Contact end -->
       <div id="footer-con">
         <footer>
           <div id="copyright">
             <span>Made by &nbsp;</span>
-            <a href="./signin.html">Yu-Fen Huang</a>
+            <a href="./back/signin.php">Yu-Fen Huang</a>
             <span itemprop="copyrightHolder"
               >, with love in 2022 &nbsp;</span>
             <span>
@@ -254,7 +226,6 @@
         </footer>
       </div>
     </div>
-    <!-- Contact end -->
 
 
     <!-- JS -->
