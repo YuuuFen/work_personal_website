@@ -1,0 +1,1 @@
+<h2 class="text-center font-weight-bold">留言管理</h2>

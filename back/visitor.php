@@ -1,4 +1,5 @@
 <!-- Visitors -->
+<h2 class="text-center font-weight-bold">訪客紀錄</h2>
 <div class="row g-3 my-2">
     <div class="col-md-3">
         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">

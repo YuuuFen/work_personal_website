@@ -1,0 +1,1 @@
+<h2 class="text-center font-weight-bold">色彩方案</h2>
