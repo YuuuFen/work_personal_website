@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body, h2 {
   padding: 0;
   margin: 0;
@@ -8,6 +9,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+}
+
+h2, input, button {
+  font-family: 'Montserrat';
 }
 
 #home {
