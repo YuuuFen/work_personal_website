@@ -2,7 +2,7 @@
     <footer>
         <div id="copyright">
             <span>Made by &nbsp;</span>
-            <a href="./back/signin.php">Yu-Fen Huang</a>
+            <a href="/front/signin.php">Yu-Fen Huang</a>
             <span itemprop="copyrightHolder">, with love in 2022 &nbsp;</span>
             <span>
                 <i class="fa fa-heart"></i>

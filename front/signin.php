@@ -1,3 +1,7 @@
+<?php
+include_once "../base.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +21,7 @@
         <h2>Sign In</h2>
       </div>
       <div id="form-holder">
-        <form method="post" action="../api/chk.php">
+        <form method="post" action="../api/chk_signin.php">
           <input type="text" name="acc" id="acc" class="input" placeholder="Account" />
           <input type="password" name="pw" id="pw" class="input" placeholder="Password" />
           <button type="submit" id="btn">Next</button>

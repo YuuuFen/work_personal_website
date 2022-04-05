@@ -4,7 +4,7 @@ session_start();
 
 class DB
 {
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=portfolio";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=13_portfolio";
     protected $user = "root";
     protected $pw = "";
     // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1100413";
@@ -35,6 +35,7 @@ class DB
 
         return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
     }
+
     public function all(...$arg)
     {
         $sql = "SELECT * FROM $this->table ";
@@ -60,9 +61,9 @@ class DB
                 }
                 break;
         }
-
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
+
     public function math($method, $col, ...$arg)
     {
         $sql = "SELECT $method($col) FROM $this->table ";
@@ -129,6 +130,7 @@ class DB
         return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 }
+// class DB end
 
 function dd($array)
 {
@@ -142,18 +144,18 @@ function to($url)
     header("location:" . $url);
 }
 
-function mb_strrev($str)
-{
-    $tmp = "";
-    for ($i = mb_strlen($str); $i >= 0; $i--) {
-        $tmp .= mb_substr($str, $i, 1);
-    }
-    return $tmp;
-}
+// function mb_strrev($str)
+// {
+//     $tmp = "";
+//     for ($i = mb_strlen($str); $i >= 0; $i--) {
+//         $tmp .= mb_substr($str, $i, 1);
+//     }
+//     return $tmp;
+// }
 
-$Scheme = new DB("scheme");
-$Admin = new DB("admin");
 $About = new DB("about");
-$Work_exp = new DB("work_exp");
-$Works = new DB("works");
+$Admin = new DB("admin");
 $Message = new DB("message");
+$Scheme = new DB("scheme");
+$Works = new DB("works");
+$Work_exp = new DB("work_exp");

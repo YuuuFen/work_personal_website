@@ -1,1 +1,1 @@
-<h2 class="text-center font-weight-bold">色彩方案</h2>
+<h2 class="text-center font-weight-bold">方案</h2>
