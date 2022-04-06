@@ -1,3 +1,7 @@
+<?php
+$row = $About->all()[0];
+?>
+
 <!-- About -->
 <div id="about">
     <!-- pro pic & info -->
@@ -7,11 +11,11 @@
         </div>
         <div id="info">
             <ul>
-                <li>Yu-Fen Huang</li>
-                <li>Taipei City, Taiwan</li>
+                <li><?= $row['name_en'] ?></li>
+                <li><?= $row['en_location'] ?></li>
+                <li><?= $row['email'] ?></li>
                 <li>
-                    <a href="https://github.com/YuuuFen"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-                    <a href="https://www.linkedin.com/in/yu-fen-huang-886a6215a/"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
+                    <a href="<?= $row['github'] ?>"><i class="fab fa-github" style="font-size: 2em;"></i></a>
                 </li>
             </ul>
         </div>
@@ -23,7 +27,7 @@
             <h2>About Me</h2>
         </div>
         <div id="intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam at nemo voluptas neque quis soluta esse incidunt, dolore voluptate minus? Quibusdam fuga accusantium, accusamus eveniet, porro perspiciatis nostrum enim adipisci voluptatum molestiae magni sint aut cumque non aliquid, voluptates dolore! Non corrupti laboriosam modi labore ad dolorum laudantium dignissimos.
+            <p><?= $row['en_brief'] ?></p>
         </div>
     </div>
     <!-- intro end -->
