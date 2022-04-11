@@ -3,11 +3,11 @@
     <nav class="navbar">
         <div class="nav-center">
             <div class="nav-logo">
-                <a href="#home" style="color: #555;"><img src="./img/fake_signature_1_small.png" alt=""></a>
+                <a href="#home"><img src="../img/LOGO.png" style="max-height: 50px; margin: 2px"></a>
             </div>
             <div class="nav-menu">
                 <div class="w-menu">
-                    <ul>
+                    <ul style="color: #555;">
                         <li><a href="#home">HOME&nbsp;</li>
                         <li><a href="#about">ABOUT&nbsp;</li>
                         <li><a href="#gallery">GALLERY</a></li>
