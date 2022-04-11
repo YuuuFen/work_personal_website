@@ -24,7 +24,7 @@ include_once "base.php";
   <?php
   include "front/nav.php";
   include "front/home.php";
-  include "front/option.php";
+  // include "front/option.php";
   include "front/about.php";
   include "front/gallery.php";
   include "front/contact.php";

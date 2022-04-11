@@ -36,10 +36,17 @@ $row = $About->all()[0];
         <div id="features">
             <h2>Features</h2>
             <div id="skill_set">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">CSS</span>
-                <span class="skill">CSS</span>
+                <ul style="display: flex; flex-wrap: wrap">
+                    <?php
+                    $skillItem = explode(",", $row['skill']);
+
+                    foreach ($skillItem as $value) {
+                        echo '<li style="min-width:25vw;">';
+                        echo "$value &nbsp;";
+                        echo "</li>";
+                    }
+                    ?>
+                </ul>
             </div>
         </div>
     </div>
