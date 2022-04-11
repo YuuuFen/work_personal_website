@@ -41,7 +41,7 @@ $row = $About->all()[0];
                     $skillItem = explode(",", $row['skill']);
 
                     foreach ($skillItem as $value) {
-                        echo '<li style="min-width:25vw;">';
+                        echo '<li style="min-width: 160px;">';
                         echo "$value &nbsp;";
                         echo "</li>";
                     }
