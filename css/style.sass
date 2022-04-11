@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 *
-    border: 1px solid rgba(55,55,55,0.5)
+    // border: 1px solid rgba(55,55,55,0.5)
     box-sizing: border-box
 
 html
@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5
 
 // About
 #about
-    // background-color: pink
+    background-color: #faedcd
     padding-top: 10vh
     min-height: 100vh
     font-size: 1.2rem
@@ -182,19 +182,21 @@ h1,h2,h3,h4,h5
             .skill
                 display: inline-block
                 width: 49%
-            .skill::before
-                content: '• '
 
 #gallery
-    // background-color: #bbcc99
+    background-color: #fefae0
     padding: 10vh 10% 0 10%
     min-height: 100vh
     font-size: 1.2rem
-    .card-body
+    .card_img
+        max-height: 20vh
+        width: 500px
+    .card_body
         padding: 2% 0
         margin: 2% 0
 
 #contact_footer
+    background: #e9edc9
     padding-top: 10vh
     min-height: 100vh
     display: flex
@@ -204,14 +206,16 @@ h1,h2,h3,h4,h5
     h1
         text-align: center
     #contact
+        background-color: #fefae0
         display: flex
         flex-flow: column
         border: 2px solid black
         margin: 0 2%
         min-height: 40vh
         width: 80vw
+        max-width: 680px
     input[type='text'], input[type='email'], select, textarea
-        width: 80%
+        // width: 80%
         font-family: 'Montserrat'
         font-size: 1.2rem
         background: none
