@@ -15,8 +15,8 @@ include_once "base.php";
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- icon -->
-  <link rel="shortcut icon" href="./favicon.ico" />
-  <link rel="bookmark" href="./favicon.ico" />
+  <!-- <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="bookmark" href="./favicon.ico" /> -->
 </head>
 
 <body>
