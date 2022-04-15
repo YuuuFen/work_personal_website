@@ -9,7 +9,7 @@ $row = $Works->all();
     <?php
     foreach ($row as $value) {
         echo "<div class='card_img'>";
-        echo "<img src='../upload/{$value['img_1']}' style='max-height: 200px;'>";
+        echo "<img src='./upload/{$value['img_1']}' style='max-height: 200px;'>";
         echo "</div>";
         echo "<div class='card_body'>";
         echo "<h3>{$value['title']}</h3>";

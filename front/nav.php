@@ -3,7 +3,7 @@
     <nav class="navbar">
         <div class="nav-center">
             <div class="nav-logo">
-                <a href="#home"><img src="../img/LOGO.png" style="max-height: 50px; margin: 2px"></a>
+                <a href="#home"><img src="./img/myLogo.png" style="max-height: 45px; margin: 2px"></a>
             </div>
             <div class="nav-menu">
                 <div class="w-menu">
